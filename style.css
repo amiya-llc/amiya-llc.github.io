@@ -537,6 +537,10 @@ button {
   max-width: 38rem;
 }
 
+.about-copy {
+  max-width: 56rem;
+}
+
 .services {
   position: relative;
 }
@@ -619,7 +623,6 @@ button {
   line-height: 1.7;
 }
 
-.about-grid,
 .contact-grid,
 .tech-layout {
   display: grid;
@@ -632,7 +635,6 @@ button {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 1.75rem;
 }
 
 .principle-card,
@@ -774,14 +776,9 @@ button {
 
 @media (max-width: 1100px) {
   .hero-grid,
-  .about-grid,
   .contact-grid,
   .tech-layout {
     grid-template-columns: 1fr;
-  }
-
-  .principles {
-    margin-top: 0;
   }
 
   .services-grid {
