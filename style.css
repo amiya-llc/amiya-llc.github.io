@@ -259,6 +259,48 @@ ul {
 }
 
 /* =============================================
+   Process Steps
+   ============================================= */
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.process-step {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.process-step__number {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #5b6ef5;
+  line-height: 1;
+  flex-shrink: 0;
+  letter-spacing: -0.03em;
+}
+
+.process-step__body {
+  flex: 1;
+}
+
+.process-step__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d0d10;
+  margin-bottom: 0.5rem;
+}
+
+.process-step__text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* =============================================
    Contact Form
    ============================================= */
 .contact-form {
@@ -281,32 +323,32 @@ ul {
   margin-bottom: 0.4rem;
   font-size: 0.85rem;
   font-weight: 600;
-  color: #444;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 0.75rem 1rem;
-  background-color: #fff;
-  border: 1.5px solid #d8dae5;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
   border-radius: 6px;
   font-size: 0.95rem;
   font-family: inherit;
-  color: #1c1c1e;
+  color: #fff;
   transition: border-color 0.2s ease;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #aaa;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
   border-color: #5b6ef5;
-  box-shadow: 0 0 0 3px rgba(91, 110, 245, 0.12);
+  box-shadow: 0 0 0 3px rgba(91, 110, 245, 0.2);
 }
 
 .contact-form .btn {
