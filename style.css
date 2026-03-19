@@ -538,7 +538,7 @@ button {
 }
 
 .about-copy {
-  max-width: 56rem;
+  max-width: none;
 }
 
 .services {
