@@ -233,6 +233,10 @@ button {
   gap: 3rem;
 }
 
+.hero-grid > :only-child {
+  grid-column: 1 / -1;
+}
+
 .hero-copy h1,
 .section-heading h2,
 .about-copy h2,
@@ -245,7 +249,7 @@ button {
 }
 
 .hero-copy h1 {
-  max-width: 11ch;
+  max-width: none;
   font-size: clamp(3.25rem, 8vw, 6rem);
 }
 
@@ -784,7 +788,7 @@ button {
   }
 
   .hero-copy h1 {
-    max-width: 12ch;
+    max-width: none;
   }
 
   .visual-frame {
